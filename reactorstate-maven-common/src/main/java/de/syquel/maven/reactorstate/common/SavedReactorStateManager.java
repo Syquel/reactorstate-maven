@@ -78,7 +78,8 @@ public class SavedReactorStateManager extends AbstractReactorStateManager {
 		for (final MavenProject project : projects) {
 			final MavenProjectState projectState = getProjectState(project);
 			if (projectState == null) {
-				throw new IllegalStateException("No saved state found for Maven project " + project.getId() + ": Rebuild required.");
+				LOGGER.warn("No saved state found for Maven project {}: Rebuild required.", project.getId());
+				continue;
 			}
 
 			project.setPomFile(projectState.getPom().getFile());
