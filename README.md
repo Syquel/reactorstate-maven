@@ -65,7 +65,7 @@ IDEs like Eclipse and IntelliJ IDEA execute Maven commands for submodules in thi
 cannot build those submodules because of missing dependencies on other modules in the same project.
 
 ## Usage
-`reactorstate-maven` consists of the Maven Core Extension `reactorstate-maven-extension`, the Maven Plugin `ractorstate-maven-plugin`,
+`reactorstate-maven` consists of the Maven Core Extension `reactorstate-maven-extension`, the Maven Plugin `reactorstate-maven-plugin`,
 and the underlying library `reactorstate-common`.
 
 ### reactorstate-maven-plugin
